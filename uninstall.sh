@@ -12,7 +12,8 @@ script_directory="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 user="$(whoami)"
 
 if [[ $1 == "--purge" ]]; then
-	purge="--purge"
+	# purge="--purge"
+	rm -rf $home/.qcd
 fi
 
-sudo $script_directory/uninstall_internal.sh "$user" $purge
+sudo $script_directory/uninstall_internal.sh "$user"
