@@ -34,7 +34,7 @@ if [[ ! -v first_arg ]]; then
 	usage
 elif [[ $first_arg == "--help"   ]] || [[ $first_arg == "-help"   ]] || [[ $first_arg == "-h" ]]; then
 	usage
-elif [[ $first_arg == "--list"   ]] || [[ $first_arg == "-list"   ]] || [[ $first_arg == "-l" ]]; then
+elif [[ $first_arg == "--list"   ]] || [[ $first_arg == "-list"   ]] || [[ $first_arg == "-l" ]] || [[ $first_arg == "ls" ]]; then
 	list
 elif [[ $first_arg == "--save"   ]] || [[ $first_arg == "-save"   ]] || [[ $first_arg == "-s" ]]; then
 	save
