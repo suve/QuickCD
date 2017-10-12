@@ -19,10 +19,6 @@ else
 	home="/home/$user"
 fi
 
-if [[ $2 == "--purge" ]]; then
-	rm -rf $home/.qcd
-fi
-
 #deletes the qcd function out of .bashrc
 sed -i "/qcd() {/,/}/d" $home/.bashrc
 
