@@ -12,7 +12,6 @@ script_directory="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 user="$(whoami)"
 
 if [[ $1 == "--purge" ]]; then
-	# purge="--purge"
 	rm -rf $home/.qcd
 fi
 
